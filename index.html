@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Устанавливаем кодировку символов документа -->
+    <meta charset="UTF-8">
+    <!-- Указываем метаинформацию о визуальном представлении документа -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Устанавливаем заголовок страницы -->
+    <title>RPG - Dragon Repeller</title>
+    <!-- Подключаем внешний CSS-файл для стилизации страницы -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Область для игровых компонентов -->
+    <div id="game">
+        <!-- Область для отображения статистики игрока -->
+        <div id="stats">
+            <!-- Отображаем количество опыта (XP) игрока -->
+            <span class="stat">XP: <strong><span id="xpText">0</span></strong></span>
+            <!-- Отображаем текущее здоровье игрока -->
+            <span class="stat">Health: <strong><span id="healthText">100</span></strong></span>
+            <!-- Отображаем количество золота игрока -->
+            <span class="stat">Gold: <strong><span id="goldText">50</span></strong></span>
+        </div>
+        <!-- Область для игровых контролов (кнопок) -->
+        <div id="controls">
+            <!-- Кнопка для перехода в магазин -->
+            <button id="button1">Go to store</button>
+            <!-- Кнопка для перехода в пещеру -->
+            <button id="button2">Go to cave</button>
+            <!-- Кнопка для сражения с драконом -->
+            <button id="button3">Fight dragon</button>
+        </div>
+        <!-- Область для отображения статистики монстров -->
+        <div id="monsterStats"></div>
+        <!-- Область для отображения текстовой информации об игровых событиях -->
+        <div id="text"></div>
+    </div>
+    <!-- Подключаем внешний JavaScript-файл для управления игрой -->
+    <script src="./script.js"></script>
+</body>
+</html>
